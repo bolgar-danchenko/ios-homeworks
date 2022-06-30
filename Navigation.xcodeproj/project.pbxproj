@@ -15,6 +15,7 @@
 		B550E74C286CB8C1003A881C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B550E74B286CB8C1003A881C /* ProfileViewController.swift */; };
 		B550E750286D2950003A881C /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B550E74F286D2950003A881C /* PostViewController.swift */; };
 		B550E754286D2CA7003A881C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B550E753286D2CA7003A881C /* Post.swift */; };
+		B5B784C6286D88A800712244 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B784C5286D88A800712244 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B550E74B286CB8C1003A881C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B550E74F286D2950003A881C /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		B550E753286D2CA7003A881C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		B5B784C5286D88A800712244 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				B550E749286CB8B0003A881C /* FeedViewController.swift */,
 				B550E74B286CB8C1003A881C /* ProfileViewController.swift */,
 				B550E74F286D2950003A881C /* PostViewController.swift */,
+				B5B784C5286D88A800712244 /* InfoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				B550E716286CAD60003A881C /* AppDelegate.swift in Sources */,
 				B550E74A286CB8B0003A881C /* FeedViewController.swift in Sources */,
 				B550E74C286CB8C1003A881C /* ProfileViewController.swift in Sources */,
+				B5B784C6286D88A800712244 /* InfoViewController.swift in Sources */,
 				B550E754286D2CA7003A881C /* Post.swift in Sources */,
 				B550E718286CAD60003A881C /* SceneDelegate.swift in Sources */,
 				B550E750286D2950003A881C /* PostViewController.swift in Sources */,

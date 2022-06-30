@@ -24,14 +24,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func createFeedViewController() -> UINavigationController {
         let feedViewController = FeedViewController()
         feedViewController.title = "Feed"
-        feedViewController.tabBarItem = UITabBarItem(title: "Feed", image: UIImage(systemName: "doc.richtext"), tag: 0)
+        feedViewController.tabBarItem = UITabBarItem(title: "Feed", image: UIImage(systemName: "doc.text"), tag: 0)
         return UINavigationController(rootViewController: feedViewController)
     }
 
     func createProfileViewController() -> UINavigationController {
         let profileViewController = ProfileViewController()
         profileViewController.title = "Profile"
-        profileViewController.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "person.circle"), tag: 1)
+        profileViewController.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "person.crop.circle"), tag: 1)
         return UINavigationController(rootViewController: profileViewController)
     }
 
