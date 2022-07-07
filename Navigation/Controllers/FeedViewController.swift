@@ -14,6 +14,16 @@ class FeedViewController: UIViewController {
     private lazy var button: UIButton = {
             let button = UIButton()
             button.backgroundColor = .yellow
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .systemCyan
+        setupButton()
+    }
+
+    private lazy var button: UIButton = {
+            let button = UIButton()
+        button.backgroundColor = .yellow
             button.layer.cornerRadius = 15
             button.setTitle("Show Post", for: .normal)
             button.setTitleColor(.black, for: .normal)

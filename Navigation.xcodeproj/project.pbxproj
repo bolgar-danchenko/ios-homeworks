@@ -80,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				B550E749286CB8B0003A881C /* FeedViewController.swift */,
+				B550E74B286CB8C1003A881C /* ProfileViewController.swift */,
 				B550E74F286D2950003A881C /* PostViewController.swift */,
 				B5B784C5286D88A800712244 /* InfoViewController.swift */,
 			);
