@@ -9,6 +9,13 @@ import UIKit
 
 class InfoViewController: UIViewController {
 
+    private lazy var button: UIButton = {
+        let button = UIButton()
+        button.setTitle("Show Alert", for: .normal)
+        button.addTarget(self, action: #selector(tap), for: .touchUpInside)
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,13 +25,6 @@ class InfoViewController: UIViewController {
         button.sizeToFit()
         button.center = view.center
     }
-    
-    private lazy var button: UIButton = {
-        let button = UIButton()
-        button.setTitle("Show Alert", for: .normal)
-        button.addTarget(self, action: #selector(tap), for: .touchUpInside)
-        return button
-    }()
     
     @objc private func tap() {
         let vc = UIAlertController(title: "Hello", message: "Do you like my homework?", preferredStyle: .alert)
