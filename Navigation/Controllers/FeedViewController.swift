@@ -10,16 +10,10 @@ import UIKit
 class FeedViewController: UIViewController {
 
     open var post = Post(title: "My Post")
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .systemCyan
-        setupButton()
-    }
-
+    
     private lazy var button: UIButton = {
             let button = UIButton()
-        button.backgroundColor = .yellow
+            button.backgroundColor = .yellow
             button.layer.cornerRadius = 15
             button.setTitle("Show Post", for: .normal)
             button.setTitleColor(.black, for: .normal)
@@ -28,6 +22,12 @@ class FeedViewController: UIViewController {
             button.translatesAutoresizingMaskIntoConstraints = false
             return button
         }()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .systemCyan
+        setupButton()
+    }
 
     private func setupButton() {
             self.view.addSubview(self.button)
