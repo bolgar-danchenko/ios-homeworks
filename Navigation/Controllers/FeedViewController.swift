@@ -9,9 +9,9 @@ import UIKit
 
 class FeedViewController: UIViewController {
 
-    open var post = Post(title: "My Post")
+    var post = Post(title: "My Post")
 
-    private lazy var button1: UIButton = {
+    private lazy var showPostButton1: UIButton = {
         let button = UIButton()
         button.backgroundColor = .yellow
         button.setTitle("Show Post #1", for: .normal)
@@ -21,7 +21,7 @@ class FeedViewController: UIViewController {
         return button
     }()
 
-    private lazy var button2: UIButton = {
+    private lazy var showPostButton2: UIButton = {
         let button = UIButton()
         button.backgroundColor = .systemGreen
         button.setTitle("Show Post #2", for: .normal)
@@ -31,15 +31,15 @@ class FeedViewController: UIViewController {
         return button
     }()
 
-    private lazy var stackView: UIStackView = { [unowned self] in
+    private lazy var stackView: UIStackView = {
         let stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.alignment = .center
         stackView.spacing = 10
         stackView.distribution = .fillEqually
-        stackView.addArrangedSubview(self.button1)
-        stackView.addArrangedSubview(self.button2)
+        stackView.addArrangedSubview(self.showPostButton1)
+        stackView.addArrangedSubview(self.showPostButton2)
         return stackView
     }()
     
@@ -57,6 +57,7 @@ class FeedViewController: UIViewController {
             stackView.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 20),
             stackView.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -20),
             stackView.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: 16),
+            stackView.heightAnchor.constraint(equalToConstant: 100)
         ])
     }
 

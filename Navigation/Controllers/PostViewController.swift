@@ -16,7 +16,7 @@ class PostViewController: UIViewController {
         self.view.backgroundColor = .systemGreen
         self.navigationItem.title = titlePost
         
-        lazy var infoButton = UIBarButtonItem(title: "Info", style: .done, target: self, action: #selector(showInfo))
+        let infoButton = UIBarButtonItem(title: "Info", style: .done, target: self, action: #selector(showInfo))
         
         self.navigationItem.rightBarButtonItem = infoButton
     }

@@ -66,7 +66,7 @@ class ProfileHeaderView: UIView {
         return statusTextField
     }()
     
-    private lazy var statusText: String = ""
+    private var statusText: String = ""
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -85,8 +85,7 @@ class ProfileHeaderView: UIView {
             avatarImageView.widthAnchor.constraint(equalToConstant: 125),
             avatarImageView.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: 16),
             avatarImageView.heightAnchor.constraint(equalToConstant: 125),
-            
-            fullNameLabel.centerXAnchor.constraint(equalTo: safeArea.centerXAnchor),
+
             fullNameLabel.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 150),
             fullNameLabel.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: 16),
             fullNameLabel.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: 27),
@@ -96,7 +95,6 @@ class ProfileHeaderView: UIView {
             statusLabel.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: 16),
             statusLabel.heightAnchor.constraint(equalToConstant: 20),
             statusLabel.bottomAnchor.constraint(equalTo: setStatusButton.topAnchor, constant: -65),
-            statusLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             
             setStatusButton.heightAnchor.constraint(equalToConstant: 50),
             setStatusButton.topAnchor.constraint(equalTo: avatarImageView.bottomAnchor, constant: 40),
